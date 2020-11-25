@@ -109,13 +109,13 @@ void draw_2D_array(char*** array, int M, int N) {
     }
 }
 
-int main (void){
+int main (void) {
     int M = 17;
     int N = 17; 
     char** array = NULL;
     allocate_2D_array(&array, M, N);
     fill_2D_array(&array, M, N);
-    draw_line(&array,M, N, 2, 5, 12, 14);
+    draw_line(&array,M, N, 2, 5, 9, 14);
     draw_2D_array(&array, M, N);
     free(array);
     array = NULL;
